@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificação de Textos</title>
+
+    <!--  Folha de estilo  -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+    <main class="main-container">
+
+        <!-- HEADER -->
+        <header class="item1">
+            <img class="logo" src="img/logo_alura.svg" alt="logotipo">
+        </header>
+
+        <section class="item2">
+            <!-- INPUT -->
+                <div class="input">
+                    <textarea id="input-text" placeholder="Digite o seu texto aqui..."></textarea>
+                </div>
+
+            <!-- IMAGEM INFORMATIVA-->
+            <img class="img-atencao" src="img/informativo.svg" alt="informativo">
+
+            <!-- BOTÓES -->    
+                <div class="button-bar">
+                    <button onclick="criptografar()" class="btn-criptografar">Criptografar</button>
+                    <button onclick="descriptografar()" class="btn-descriptografar">Descriptografar</button>
+                </div>      
+        </section>    
+
+        <section class="item3"> 
+             <!-- OUTPUT -->
+            <div id="output-content">
+                    <img class="homem-observando" src="img/homem_observando.svg" alt="imagem de um homem observando">
+                    <h2 class="title">Nenhuma mensagem encontrada</h2>
+                    <p class="description">Digite o texto que deseja criptografar ou descriptografar.</p>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <section class="item4">
+            <footer class="container-footer">
+            <h6 class="creditos">Desenvolvido por Lucas Ferreira dos Santos</h6>
+            <p>Aluno da Turma 4 do Curso de Iniciante na Programação, oferecido pela Oracle em parceria com a Alura.</p>
+            </footer>
+        </section>
+
+    </main>     
+
+    <!-- SCRIPT DO JAVASCRIPT -->
+    <script src="script.js"></script>
+</body>
+</html>
