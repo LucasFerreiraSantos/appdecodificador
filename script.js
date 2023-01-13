@@ -1,5 +1,6 @@
 var textInput = document.querySelector("#input-text");
 var output = document.querySelector("#output-content");
+var textoCopiado = document.querySelector(document.getElementById(resultCriptografia, resultDescriptografia));
 
 function criptografar() {
     var texto = textInput.value;
@@ -18,7 +19,7 @@ function descriptografar() {
 }
 
 function copiarTexto() {
-    navigator.clipboard.writeText(document.getElementById('input-text')).then(() => {
+    navigator.clipboard.writeText(textoCopiado).then(() => {
         alert("Texto copiado")
     })
 }
